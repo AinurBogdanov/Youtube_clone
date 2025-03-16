@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube.com Clone</title>
     <style>
+      body {
+        font-family: Roboto;
+      }
+      p {
+        margin: 0; 
+      }
       input {
         display: block;
       }
       .thumbnail {
         width: 300px;
+        margin-bottom: 8px;
       }
       .content_container {
         width: 300px;
@@ -17,23 +24,79 @@
         vertical-align: top;
         margin-left: 10px;
       }
+      .text-info {
+        width: 230px;
+        display: inline-block;
+        margin-left: 5px;
+      }
+      .author-img-div {
+        width: 50px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .author-img {
+        width: 45px;
+        border-radius: 2rem;
+      }
+      .title {
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .name,.stats {
+        color: rgb(96, 96, 96);
+        font-size: 12px;
+      }
+      .name {
+        margin-bottom: 5px;
+      }
+
     </style>
   </head>
   <body>
     <input type="text" placeholder="Search" />
+
+
+
     <div class="content_container">
-      <img class="thumbnail" src="thumbnils/thumbnail-1.webp" alt="img" />
+      <img 
+      class="thumbnail" 
+      src="thumbnils/thumbnail-1.webp" 
+      alt="img" />
+
       <div class="description">
-        <p>Talking Tech and AI with Google CEO Sundar Pichai!</p>
-        <p>Marques Brownlee</p>
-        <p>3.4M views &#183; 6 months ago</p>
+        <div class="author-img-div">
+          <img class="author-img" src="profiles/channel-1.jpeg" alt="">
+        </div>
+
+        <div class="text-info">
+          <p class="title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+          <p class="name">Marques Brownlee</p>
+          <p class="stats">3.4M views &#183; 6 months ago</p>
+        </div>
       </div>
     </div>
+
     <div class="content_container">
-      <img class="thumbnail" src="thumbnils/thumbnail-2.webp" alt="img" />
-      <p>Try Not To Laugh Challenge #9</p>
-      <p>Markiplier</p>
-      <p>19M views · 4 years ago</p>
+      <img 
+      class="thumbnail" 
+      src="thumbnils/thumbnail-2.webp" 
+      alt="img" />
+
+      <div class="description">
+        <div class="author-img-div">
+          <img class="author-img" src="profiles/channel-2.jpeg" alt="">
+        </div>
+
+        <div class="text-info">
+          <p class="title">Try Not To Laugh Challenge #9</p>
+          <p class="name">Markiplier</p>
+          <p class="stats">19M views &#183; 4 years ago</p>
+        </div>
+      </div>
     </div>
+
+
+
   </body>
 </html>
