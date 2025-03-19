@@ -4,10 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube.com Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/style-header.css">
+    <link rel="stylesheet" href="/styles/side-bar-styles.css">
   </head>
   <body>
-    <input type="text" placeholder="Search" />
+
+    <div class="header">
+      
+      <div class="left-el-header">
+        <img  class="menu" src="icons/hamburger-menu.svg" alt="">
+        <img  class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+      </div>
+
+      <div class="center-el-header">
+        <input class="input" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-img " src="icons/search.svg" alt="">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button"> 
+            <img class="voice-search" src="icons/voice-search-icon.svg" alt="">
+            <div class="tooltip">search with voice</div>
+        </button>
+      </div> 
+
+      <div class="right-el-header">
+          <div class="tooltip-container">
+            <img class="icon" src="icons/upload.svg" alt="">
+            <div class="tooltip">Upload</div>
+          </div>
+          <div class="tooltip-container">
+            <img class="icon" src="icons/youtube-apps.svg" alt="">
+            <div class="tooltip">YouTube Apps</div>
+          </div>
+          <div class="tooltip-container">
+            <img class="icon" src="icons/notifications.svg" alt="">
+              <div class="notification-number">3</div>
+              <div class="tooltip">Notifications</div>
+          </div>
+
+          <div class="tooltip-container">
+            <img class="mychanel" src="profiles/channel-1.jpeg" alt="">
+            <div class="tooltip">Profile</div>
+          </div>
+      </div>
+    </div>
+
+    <aside class="side-bar">
+      <div class="side-element">
+        <img src="side-imges/home.svg" alt="">
+        <div>Home</div>
+      </div>
+      <div class="side-element">
+        <img src="side-imges/explore.svg" alt="">
+        <div>Explore</div>
+      </div>     
+      <div class="side-element">
+        <img src="side-imges/subscriptions.svg" alt="">
+        <div>Subscriptions</div>
+      </div>    
+      <div class="side-element">
+        <img src="side-imges/originals.svg" alt="">
+        <div>Originals</div>
+      </div>     
+      <div class="side-element">
+        <img src="side-imges/youtube-music.svg" alt="">
+        <div>YouTube Music</div>
+      </div>      
+      <div class="side-element">
+        <img src="side-imges/library.svg" alt="">
+        <div>Library</div>
+      </div>
+        
+    </aside>
     <div class="main-grid">
       <div>
         <div class="video-conteiner"> 

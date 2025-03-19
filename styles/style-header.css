@@ -1,0 +1,144 @@
+* {
+    box-sizing:border-box ;
+}
+
+.header {
+    position: fixed;
+    top: 0px; 
+    left: 0px;
+    right: 0px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+  }
+
+  .left-el-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    height: 25px;
+    margin: 0 30px;
+
+  }
+  .youtube-logo {
+    height: 22px;
+  }
+
+  .center-el-header {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 60px;
+    max-width: 470px;
+  }
+  .input {
+    height: 45px;
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 16px;
+    padding-left: 12px;
+    flex: 1;
+    width: 0;
+    margin:0 0 0 ;
+  }
+  .search-button {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(204, 204, 204);
+    height: 45px;
+    width: 64px;
+    margin-right: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .search-button .tooltip ,
+  .voice-search-button .tooltip ,
+  .tooltip-container .tooltip {
+    position: absolute;
+    top: 50px;
+    background-color: rgb(206, 205, 205);
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+.tooltip-container .tooltip {
+    top:40px
+}
+.voice-search-button .tooltip {
+    position: absolute;
+    top: 60px;
+}
+.search-button:hover .tooltip ,
+.voice-search-button:hover .tooltip ,
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+}
+
+
+
+
+  .search-button:hover {
+    background-color: rgb(238, 236, 236);
+  }
+  .search-button:active {
+    background-color: rgb(221, 218, 218);
+  }
+  .search-img {
+  width: 25px;
+  }
+  .voice-search-button {
+    border: none;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+  .voice-search {
+    width: 25px;
+  }
+
+
+
+  .right-el-header {
+    display: flex;
+    width: 182px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 30px;
+
+  }
+  .tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .mychanel {
+    width: 32px;
+    border-radius: 20px;
+  }
+
+  .icon {
+    height: 24px;
+  }
+  .notification-number {
+    background-color: rgb(216, 6, 6);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto , Arial;
+    position: absolute;
+    top:-4px;
+    right:-4px
+  }
+

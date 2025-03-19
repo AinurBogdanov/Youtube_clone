@@ -8,9 +8,17 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-   input {
-    display: block;
-  }
+  body {
+    padding: 80px 20px 80px 90px;
+    background-color: rgb(240, 240, 240);
+  } 
+
+
+
+
+
+
+
   .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -46,4 +54,23 @@
     }
     .author-name {
         margin-bottom: 6px;
+    }
+
+
+
+    .video-conteiner {
+      position: relative;
+    }
+
+    .video-time {
+      position: absolute;
+      bottom: 12px;
+      right: 5px;
+      padding: 2px 3px;
+      background-color: rgba(0, 0, 0, 0.877);
+      color: white;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: 500;
+
     }
