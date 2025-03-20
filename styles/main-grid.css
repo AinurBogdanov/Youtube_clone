@@ -7,7 +7,7 @@
    .thumbnail {    
         width: 100%;
         }
-        .video-grid-info {
+    .video-grid-info {
         display: grid;
         grid-template-columns: 50px 1fr;
         
@@ -47,4 +47,23 @@
       font-size: 13px;
       font-weight: 500;
 
+    }
+
+    @media (max-width:700px) {
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+    }
+    @media (min-width:1500px) {
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+    }
+    @media (max-width:560px) {
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
     }

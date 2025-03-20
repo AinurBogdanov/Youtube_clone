@@ -19,13 +19,15 @@
   }
   .menu {
     height: 25px;
-    margin: 0 30px;
+    margin: 0 25px;
 
   }
   .youtube-logo {
     height: 22px;
   }
-
+  .youtube-logo-media {
+    display: none;
+  }
   .center-el-header {
     display: flex;
     align-items: center;
@@ -41,6 +43,7 @@
     flex: 1;
     width: 0;
     margin:0 0 0 ;
+    min-width: 100px;
   }
   .search-button {
     background-color: rgb(247, 247, 247);
@@ -97,8 +100,6 @@
     width: 25px;
   }
 
-
-
   .right-el-header {
     display: flex;
     width: 182px;
@@ -135,3 +136,61 @@
     right:-4px
   }
 
+  @media (max-width:660px) {
+    .menu {
+      height: 25px;
+      margin: 0 20px;
+    }
+    .youtube-logo {
+      height: 16px;
+    }
+    .center-el-header {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin-left: 30px;
+      max-width: 470px;
+    }
+    .search-button {
+      background-color: rgb(247, 247, 247);
+      border: 1px solid rgb(204, 204, 204);
+      height: 45px;
+      width: 40px;
+      margin-right: 8px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width:630px) {
+    .center-el-header {
+      margin-left: 10px;
+    }
+    .search-button {
+      display: none;
+    }
+    .input {
+      height: 35px;
+    }
+  }
+
+  @media (max-width:450px) {
+    .delite-420px .icon {
+      display: none;
+    }
+    .right-el-header {
+      margin-right: 25px;
+      margin-left: 5px;
+      
+    }
+  }
+
+  @media (max-width:400px) {
+    .youtube-logo {
+      display: none;
+    }
+    .youtube-logo-media {
+      display: inline;
+      width: 20px;
+    }
+  }
